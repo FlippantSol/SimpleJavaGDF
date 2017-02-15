@@ -8,8 +8,8 @@ import java.awt.*;
  */
 public class GameMain {
     private static final String GAME_TITLE = "Java Game Development Framework";
-    public static final int GAME_WIDTH= 800;
-    public static final int GAME_HEIGHT = 450;
+    public static final int GAME_WIDTH= 1920;
+    public static final int GAME_HEIGHT = 1080;
     public static Game sGame;
 
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class GameMain {
         frame.setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(GAME_WIDTH,GAME_HEIGHT);
-        frame.setResizable(false);
+        frame.setResizable(true);
 
         showCrappyUI(frame);
 
@@ -50,6 +50,11 @@ class CrappyPanel extends JPanel {
 
         g.setColor(Color.GREEN);
         g.drawRect(50,50,100,100);
+
+        g.setColor(Color.WHITE);
+        g.fillRect(51, 51, 99,99);
+
+        g.drawOval(400,400,200,200);
 
         g.setColor(Color.RED);
         g.drawString("Hello World!", 200, 200);
