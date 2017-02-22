@@ -1,4 +1,6 @@
-package com.jamescho.game.main;
+package com.jamescho.game.main.game.main;
+
+import com.jamescho.game.main.Game;
 
 import javax.swing.*;
 import java.awt.*;
